@@ -6,7 +6,7 @@ from photo_manager_api.models import Photo
 class PhotoSerializerList(serializers.ModelSerializer):
     class Meta:
         model = Photo
-        fields = ('id', 'date_created', 'user_created', 'image', 'people_on_photo',)
+        fields = ('id', 'date_created', 'user_created', 'image',)
 
 
 class PhotoSerializer(serializers.ModelSerializer):
